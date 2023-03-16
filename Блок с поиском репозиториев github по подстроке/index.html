@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блок с поиском репозиториев github по подстроке</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Block with a github repository search on a substring</h2>
+        <div class="search-field">
+            <form action="https://github.com/search/" class="form-action" target="_blank">
+                <label for="search" class="label">Search:</label>
+                <input type="text" class="form-search" id="search" name="q" placeholder="Enter text" required minlength="3">
+                <button onclick=`window.location.href = "https://github.com/search/"` class="btn">Search</button>
+            </form>            
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
